@@ -1,6 +1,7 @@
 var React = require('react'),
     _ = require('lodash'),
-    d3 = require('d3');
+    d3 = require('d3'),
+    ReactDOM = require('react-dom');
 
 var H1BGraph = React.createClass({
     render: function () {
@@ -16,7 +17,7 @@ var H1BGraph = React.createClass({
     }
 });
 
-React.render(
+ReactDOM.render(
     <H1BGraph url="data/h1bs.csv" />,
     document.querySelectorAll('.h1bgraph')[0]
 )
